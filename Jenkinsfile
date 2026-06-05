@@ -23,7 +23,7 @@ pipeline {
         stage('Publicar aplicacion') {
             steps {
                 echo 'Aplicacion lista para despliegue'
-                bat 'node -e "console.log(require(\"./package.json\").version)"'
+                bat 'node -p "require(\'./package.json\').version"'
             }
         }
     }
