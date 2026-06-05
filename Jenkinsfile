@@ -10,20 +10,20 @@ pipeline {
 
         stage('Instalar dependencias') {
             steps {
-                sh 'npm install'
+                bat 'npm install'
             }
         }
 
         stage('Ejecutar pruebas') {
             steps {
-                sh 'npm test'
+                bat 'npm test'
             }
         }
 
-        stage('Publicar aplicación') {
+        stage('Publicar aplicacion') {
             steps {
-                echo 'Aplicación lista para despliegue 🚚'
-                sh 'node -e "console.log(require(\"./package.json\").version)"'
+                echo 'Aplicacion lista para despliegue'
+                bat 'node -e "console.log(require(\"./package.json\").version)"'
             }
         }
     }
