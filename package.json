@@ -1,0 +1,13 @@
+{
+  "name": "techdelivery-app",
+  "version": "1.0.0",
+  "description": "App de estado de pedidos - TechDelivery Perú",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"No hay pruebas configuradas\" && exit 0"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
